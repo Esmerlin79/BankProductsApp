@@ -1,0 +1,1 @@
+{"version":3,"names":["_modal","require","_default","exports","default","ReactNativeModal"],"sources":["index.js"],"sourcesContent":["import { ReactNativeModal } from './modal';\nexport { ReactNativeModal } from './modal';\nexport default ReactNativeModal;\n"],"mappings":";;;;;;;;;;AAAA,IAAAA,MAAA,GAAAC,OAAA;AAA2C,IAAAC,QAAA,GAAAC,OAAA,CAAAC,OAAA,GAE5BC,uBAAgB"}

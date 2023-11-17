@@ -1,0 +1,24 @@
+d03b6a4f54403eb492a32d475604bcc3
+var _interopRequireDefault = require("@babel/runtime/helpers/interopRequireDefault");
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+var _asyncToGenerator2 = _interopRequireDefault(require("@babel/runtime/helpers/asyncToGenerator"));
+var _axios = _interopRequireDefault(require("axios"));
+var baseURL = "https://tribu-ti-staffing-desarrollo-afangwbmcrhucqfh.z01.azurefd.net/ipf-msa-productosfinancieros";
+var productApi = _axios.default.create({
+  baseURL: baseURL
+});
+productApi.interceptors.request.use(function () {
+  var _ref = (0, _asyncToGenerator2.default)(function* (config) {
+    var authorId = Math.floor(Math.random() * 1000000);
+    config.headers['authorId'] = 1235;
+    return config;
+  });
+  return function (_x) {
+    return _ref.apply(this, arguments);
+  };
+}());
+var _default = exports.default = productApi;
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJuYW1lcyI6WyJfYXhpb3MiLCJfaW50ZXJvcFJlcXVpcmVEZWZhdWx0IiwicmVxdWlyZSIsImJhc2VVUkwiLCJwcm9kdWN0QXBpIiwiYXhpb3MiLCJjcmVhdGUiLCJpbnRlcmNlcHRvcnMiLCJyZXF1ZXN0IiwidXNlIiwiX3JlZiIsIl9hc3luY1RvR2VuZXJhdG9yMiIsImRlZmF1bHQiLCJjb25maWciLCJhdXRob3JJZCIsIk1hdGgiLCJmbG9vciIsInJhbmRvbSIsImhlYWRlcnMiLCJfeCIsImFwcGx5IiwiYXJndW1lbnRzIiwiX2RlZmF1bHQiLCJleHBvcnRzIl0sInNvdXJjZXMiOlsicHJvZHVjdEFwaS50cyJdLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgYXhpb3MgZnJvbSBcImF4aW9zXCI7XG5cbmNvbnN0IGJhc2VVUkwgPSBwcm9jZXNzLmVudi5SRUFDVF9BUFBfQVBJX0JBU0VfVVJMO1xuXG5jb25zdCBwcm9kdWN0QXBpID0gYXhpb3MuY3JlYXRlKHsgYmFzZVVSTCB9KTtcblxuXG5wcm9kdWN0QXBpLmludGVyY2VwdG9ycy5yZXF1ZXN0LnVzZShcbiAgICBhc3luYyAoY29uZmlnOiBhbnkpID0+IHtcbiAgICAgICAgY29uc3QgYXV0aG9ySWQgPSBNYXRoLmZsb29yKE1hdGgucmFuZG9tKCkgKiAxMDAwMDAwKTtcbiAgICAgICAgY29uZmlnLmhlYWRlcnNbJ2F1dGhvcklkJ10gPSAxMjM1XG4gICAgICAgIHJldHVybiBjb25maWc7XG4gICAgfVxuKTtcblxuZXhwb3J0IGRlZmF1bHQgcHJvZHVjdEFwaTsiXSwibWFwcGluZ3MiOiI7Ozs7OztBQUFBLElBQUFBLE1BQUEsR0FBQUMsc0JBQUEsQ0FBQUMsT0FBQTtBQUVBLElBQU1DLE9BQU8sdUdBQXFDO0FBRWxELElBQU1DLFVBQVUsR0FBR0MsY0FBSyxDQUFDQyxNQUFNLENBQUM7RUFBRUgsT0FBTyxFQUFQQTtBQUFRLENBQUMsQ0FBQztBQUc1Q0MsVUFBVSxDQUFDRyxZQUFZLENBQUNDLE9BQU8sQ0FBQ0MsR0FBRztFQUFBLElBQUFDLElBQUEsT0FBQUMsa0JBQUEsQ0FBQUMsT0FBQSxFQUMvQixXQUFPQyxNQUFXLEVBQUs7SUFDbkIsSUFBTUMsUUFBUSxHQUFHQyxJQUFJLENBQUNDLEtBQUssQ0FBQ0QsSUFBSSxDQUFDRSxNQUFNLENBQUMsQ0FBQyxHQUFHLE9BQU8sQ0FBQztJQUNwREosTUFBTSxDQUFDSyxPQUFPLENBQUMsVUFBVSxDQUFDLEdBQUcsSUFBSTtJQUNqQyxPQUFPTCxNQUFNO0VBQ2pCLENBQUM7RUFBQSxpQkFBQU0sRUFBQTtJQUFBLE9BQUFULElBQUEsQ0FBQVUsS0FBQSxPQUFBQyxTQUFBO0VBQUE7QUFBQSxHQUNMLENBQUM7QUFBQyxJQUFBQyxRQUFBLEdBQUFDLE9BQUEsQ0FBQVgsT0FBQSxHQUVhUixVQUFVIn0=
